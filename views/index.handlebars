@@ -1,0 +1,21 @@
+<br><br>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            {{#each burger}}
+
+            <button class="eatButton" data-id={{ id }}>EAT IT!</button> {{ burger_name }} <hr>
+
+
+            {{/each}}
+        </div>
+        <div class="col-md-6">
+            <form id="addBurger">
+                <input id="burgerInput" type="text" name="newBurger" placeholder="Add New Burger">
+                <input type="submit" value="ADD BURGER">
+            </form>
+        </div>
+    </div>
+
+</div>
